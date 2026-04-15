@@ -15,7 +15,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     return (
       <article className="mx-auto max-w-3xl space-y-6">
         <header className="space-y-2">
-          <p className="text-sm text-muted">{article.date}</p>
+          {article.date ? <p className="text-sm text-muted">{article.date}</p> : null}
           <h1 className="text-4xl font-semibold tracking-tight">{article.title}</h1>
           <p className="text-zinc-300">{article.description}</p>
         </header>

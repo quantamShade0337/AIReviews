@@ -26,6 +26,18 @@ function readMarkdownFile(filePath: string) {
   return matter(raw);
 }
 
+function getStringValue(
+  value: unknown,
+  fallback: string
+) {
+  return typeof value === "string" && value.trim().length > 0 ? value.trim() : fallback;
+}
+
+function normalizeDate(value: unknown) {
+  const date = getStringValue(value, "");
+  return date;
+}
+
 export function getAllArticles(): ArticleMeta[] {
   return fs
     .readdirSync(ARTICLES_DIR)
@@ -36,12 +48,12 @@ export function getAllArticles(): ArticleMeta[] {
 
       return {
         slug,
-        title: String(data.title),
-        date: String(data.date),
-        description: String(data.description)
+        title: getStringValue(data.title, slug.replace(/-/g, " ")),
+        date: normalizeDate(data.date),
+        description: getStringValue(data.description, "No description provided yet.")
       };
     })
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
 }
 
 export async function getArticleBySlug(slug: string) {
@@ -51,9 +63,9 @@ export async function getArticleBySlug(slug: string) {
 
   return {
     slug,
-    title: String(data.title),
-    date: String(data.date),
-    description: String(data.description),
+    title: getStringValue(data.title, slug.replace(/-/g, " ")),
+    date: normalizeDate(data.date),
+    description: getStringValue(data.description, "No description provided yet."),
     html: processedContent.toString()
   };
 }
@@ -72,9 +84,9 @@ export async function getModelBySlug(slug: string) {
 
   return {
     slug,
-    name: String(data.name),
-    rating: Number(data.rating),
-    best_for: String(data.best_for),
+    name: getStringValue(data.name, slug.replace(/-/g, " ")),
+    rating: typeof data.rating === "number" ? data.rating : Number(data.rating) || 0,
+    best_for: getStringValue(data.best_for, "General usage"),
     html: processedContent.toString()
   };
 }

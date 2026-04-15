@@ -34,7 +34,7 @@ export default function HomePage() {
               href={`/articles/${article.slug}`}
               className="rounded-lg border border-border bg-panel p-5 transition hover:border-zinc-500"
             >
-              <p className="text-sm text-muted">{article.date}</p>
+              {article.date ? <p className="text-sm text-muted">{article.date}</p> : null}
               <h3 className="mt-1 text-lg font-semibold">{article.title}</h3>
               <p className="mt-2 text-zinc-300">{article.description}</p>
             </Link>
