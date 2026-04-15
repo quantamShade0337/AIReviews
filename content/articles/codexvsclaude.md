@@ -1,6 +1,6 @@
-title	Claude vs GPT: Which is Better?
-date	2026-04-14
-description	A deep comparison of reasoning, coding, and cost.
+title	Codex VS Claude
+date	2026-04-15
+description	The developer's dream or nightmare?
 
  # Codex vs Claude 
 
