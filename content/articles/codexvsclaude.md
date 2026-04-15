@@ -1,4 +1,8 @@
-﻿# Codex vs Claude 
+title	Claude vs GPT: Which is Better?
+date	2026-04-14
+description	A deep comparison of reasoning, coding, and cost.
+
+ # Codex vs Claude 
 
 **OpenAI's Codex** and **Anthropic's Claude** have been going head to head for a few months now in their really successful attempts to grab the attention of developers worldwide. These tools are extensively used to speed up production in prototyping, developing and shipping of products. Do note that this comparison is focused on the AI models more than the UI and how to use these tools.
 
@@ -62,6 +66,7 @@ The key difference is that Codex focuses more on execution and completing tasks 
 **Do note that this is a personal opinion. While I try to keep it as unbiased as possible, some form of bias might still slip in**
 
 Thanks for reading!!
+
 -Ethan 
 
 ```
