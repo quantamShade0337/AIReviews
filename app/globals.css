@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-bg text-text antialiased;
+}
+
+.prose-custom {
+  @apply text-text leading-8;
+}
+
+.prose-custom h1,
+.prose-custom h2,
+.prose-custom h3,
+.prose-custom h4 {
+  @apply text-text font-semibold tracking-tight mt-8 mb-4;
+}
+
+.prose-custom p,
+.prose-custom ul,
+.prose-custom ol,
+.prose-custom blockquote {
+  @apply text-zinc-300 mb-5;
+}
+
+.prose-custom a {
+  @apply text-accent underline underline-offset-4;
+}
+
+.prose-custom code {
+  @apply bg-zinc-900 px-1.5 py-1 rounded text-sm;
+}
+
+.prose-custom pre {
+  @apply bg-zinc-900 border border-border rounded-lg p-4 overflow-x-auto;
+}

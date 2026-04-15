@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Claude 4 Sonnet",
+    "slug": "claude",
+    "scores": {
+      "reasoning": 9.3,
+      "reliability": 9.2,
+      "cost": 7.8,
+      "speed": 8.6,
+      "coding": 9.1,
+      "UX": 9.0,
+      "safety": 9.4,
+      "integrations": 8.2,
+      "support": 8.5,
+      "code": 9.3,
+      "debug": 9.2,
+      "docs": 8.9,
+      "api": 8.7,
+      "creativity": 9.1,
+      "value": 8.1
+    }
+  },
+  {
+    "name": "GPT-4.2",
+    "slug": "gpt",
+    "scores": {
+      "reasoning": 9.0,
+      "reliability": 8.8,
+      "cost": 7.3,
+      "speed": 8.9,
+      "coding": 9.4,
+      "UX": 8.6,
+      "safety": 8.7,
+      "integrations": 9.0,
+      "support": 8.6,
+      "code": 9.5,
+      "debug": 9.0,
+      "docs": 9.1,
+      "api": 9.2,
+      "creativity": 8.7,
+      "value": 7.9
+    }
+  },
+  {
+    "name": "Gemini 2.5 Pro",
+    "slug": "gemini",
+    "scores": {
+      "reasoning": 8.8,
+      "reliability": 8.4,
+      "cost": 8.6,
+      "speed": 8.5,
+      "coding": 8.9,
+      "UX": 8.5,
+      "safety": 8.8,
+      "integrations": 8.4,
+      "support": 8.0,
+      "code": 8.8,
+      "debug": 8.6,
+      "docs": 8.3,
+      "api": 8.4,
+      "creativity": 8.9,
+      "value": 8.8
+    }
+  },
+  {
+    "name": "Llama 4 Instruct",
+    "slug": "llama",
+    "scores": {
+      "reasoning": 8.1,
+      "reliability": 7.8,
+      "cost": 9.2,
+      "speed": 8.2,
+      "coding": 8.0,
+      "UX": 7.6,
+      "safety": 8.0,
+      "integrations": 7.3,
+      "support": 7.1,
+      "code": 8.2,
+      "debug": 7.9,
+      "docs": 7.5,
+      "api": 8.0,
+      "creativity": 8.0,
+      "value": 9.1
+    }
+  }
+]
