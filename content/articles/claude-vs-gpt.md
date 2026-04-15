@@ -1,21 +1,21 @@
 ---
-title: "Claude vs GPT: Which is Better?"
-date: "2026-04-14"
-description: "A deep comparison of reasoning, coding, and cost."
+title: "Codex vs Claude: Which Should You Use?"
+date: "2026-04-15"
+description: "A practical comparison of coding reliability, reasoning quality, and workflow fit."
 ---
 
 ## Executive summary
 
 Both models are highly capable, but their strengths differ by workflow.
 
-- **Claude** performs consistently in long-form reasoning and editorial tasks.
-- **GPT** excels in code-heavy workflows and API ecosystem depth.
+- **Codex** excels in code generation, refactors, and debugging-heavy development loops.
+- **Claude** performs consistently in long-form reasoning and editorial-quality writing.
 
 ## What to evaluate
 
-1. Reasoning reliability under constraints
-2. Coding + debugging consistency
-3. Practical cost for your usage profile
+1. End-to-end coding accuracy on your real repo tasks
+2. Reasoning reliability under constraints
+3. Latency and cost for your usage profile
 
 ## Recommendation
 
