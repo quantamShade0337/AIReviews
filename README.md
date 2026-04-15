@@ -11,13 +11,13 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Build static output
+## Production build
 
 ```bash
 npm run build
 ```
 
-The static site is exported to `out/`, ready for Vercel deployment.
+Deploy directly to Vercel (recommended) for static prerendered routes.
 
 ## Content management
 
